@@ -1,7 +1,3 @@
-"""
-Simple Calculator in Python
-"""
-
 def add(x, y):
     """Add two numbers"""
     return x + y
