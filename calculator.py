@@ -117,6 +117,10 @@ def create_ui():
 
     frame = ttk.Frame(root, padding=20)
     frame.grid(row=0, column=0, sticky="NSEW")
+    frame.columnconfigure(0, weight=1)
+    frame.columnconfigure(1, weight=1)
+    frame.columnconfigure(2, weight=1)
+    frame.rowconfigure(3, weight=1)
 
     ttk.Label(frame, text="Simple Calculator", font=(None, 18, "bold")).grid(
         row=0, column=0, columnspan=3, pady=(0, 16)
@@ -152,42 +156,42 @@ def create_ui():
         text="Add",
         command=lambda: handle_operation("add", num1_entry, num2_entry, result_label),
         width=14,
-    ).grid(row=5, column=0, padx=4, pady=4)
+    ).grid(row=5, column=0, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
         text="Subtract",
         command=lambda: handle_operation("subtract", num1_entry, num2_entry, result_label),
         width=14,
-    ).grid(row=5, column=1, padx=4, pady=4)
+    ).grid(row=5, column=1, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
         text="Multiply",
         command=lambda: handle_operation("multiply", num1_entry, num2_entry, result_label),
         width=14,
-    ).grid(row=5, column=2, padx=4, pady=4)
+    ).grid(row=5, column=2, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
         text="Divide",
         command=lambda: handle_operation("divide", num1_entry, num2_entry, result_label),
         width=14,
-    ).grid(row=6, column=0, padx=4, pady=4)
+    ).grid(row=6, column=0, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
         text="Zero se Divide kare to?",
         command=lambda: handle_choice_8(num1_entry, result_label),
         width=26,
-    ).grid(row=6, column=1, padx=4, pady=4)
+    ).grid(row=6, column=1, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
         text="Clear",
         command=lambda: clear_inputs(num1_entry, num2_entry, result_label),
         width=14,
-    ).grid(row=6, column=2, padx=4, pady=4)
+    ).grid(row=6, column=2, padx=4, pady=4, sticky="EW")
 
     ttk.Button(
         frame,
