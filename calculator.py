@@ -107,7 +107,9 @@ def bind_shortcuts(root, num1_entry, num2_entry, result_label):
 def create_ui():
     root = tk.Tk()
     root.title("Simple Calculator")
-    root.resizable(False, False)
+    root.resizable(True, True)
+    root.rowconfigure(0, weight=1)
+    root.columnconfigure(0, weight=1)
 
     style = ttk.Style(root)
     style.configure("TButton", padding=6)
