@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block title %}Order {{ order.id }}{% endblock %}
+{% block content %}
+<h2>Order Confirmation</h2>
+<p>Order #{{ order.id }} — Status: {{ order.status }}</p>
+<p>Estimated delivery: {{ order.delivery_start }} to {{ order.delivery_end }} (about 3-4 days)</p>
+<h4>Items</h4>
+<ul>
+    {% for it in items %}
+    <li>{{ it.name }} x {{ it.qty }} — ₹{{ it.price * it.qty }}</li>
+    {% endfor %}
+</ul>
+<p><strong>Total paid: ₹{{ order.total }}</strong></p>
+<a href="/" class="btn btn-primary">Back to shop</a>
+{% endblock %}

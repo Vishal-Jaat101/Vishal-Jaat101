@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1>Velmington — Crafted Comfort</h1>
+                <p>Premium hoodies, tailored for comfort and designed for statement. Discover collections, custom
+                    prints, and exclusive drops.</p>
+                <a href="/shop" class="cta">Shop the Collection</a>
+            </div>
+            <div class="col-md-5 text-end d-none d-md-block">
+                <img src="https://images.unsplash.com/photo-1520975698515-9f0a3f77e7d7?auto=format&fit=crop&w=800&q=80"
+                    alt="hero" style="max-width:320px;border-radius:10px;box-shadow:0 12px 30px rgba(2,6,23,0.4)">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--muted">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Featured Collections</h2>
+            <a href="/shop" class="btn btn-link">View all</a>
+        </div>
+        <div class="featured-grid mb-4">
+            <div class="featured-card">
+                <img
+                    src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80">
+                <div class="meta">
+                    <h3>Signature Hoodies</h3>
+                    <div><a href="/shop" class="btn btn-sm btn-light">Explore</a></div>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img
+                    src="https://images.unsplash.com/photo-1520975698515-9f0a3f77e7d7?auto=format&fit=crop&w=1200&q=80">
+                <div class="meta">
+                    <h3>Limited Drops</h3>
+                    <div><a href="/shop" class="btn btn-sm btn-light">Shop now</a></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mb-3">Best Sellers</h3>
+        <div class="products-grid">
+            {% for p in products %}
+            <div class="product-card card">
+                <img src="{{ p.image_url }}" alt="{{ p.name }}">
+                <div class="card-body">
+                    <h5>{{ p.name }}</h5>
+                    <p class="text-muted">₹{{ p.price_inr }}</p>
+                    <p class="mb-2">{{ p.description }}</p>
+                    <a href="/product/{{ p.id }}" class="btn btn-outline-secondary btn-sm">Details</a>
+                    <a href="/add_to_cart/{{ p.id }}" class="btn btn-primary btn-sm">Add to cart</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="mb-4">Lookbook</h2>
+        <div class="lookbook-grid mb-4">
+            {% for p in products[:8] %}
+            <img src="{{ p.image_url }}" alt="{{ p.name }}">
+            {% endfor %}
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p><strong>"The coziest hoodie I've owned."</strong><br><small class="text-muted">— A satisfied
+                            customer</small></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p><strong>"Quality materials, perfect fit."</strong><br><small class="text-muted">— Fashion
+                            reviewer</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--muted">
+    <div class="container">
+        <div class="newsletter d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div>
+                <h3>Join the list</h3>
+                <p class="mb-0">Subscribe for drops, offers, and early access to new collections.</p>
+            </div>
+            <form class="d-flex" style="gap:8px;">
+                <input class="form-control" placeholder="Enter your email">
+                <button class="btn btn-light">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+:root {
+    --brand-royal: #0f6b46;
+    /* deep royal green */
+    --accent: #071214;
+    --muted: #6b7280;
+    --bg: #ffffff;
+}
+
+/* backup of style.css */

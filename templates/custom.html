@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block title %}Custom Design{% endblock %}
+{% block content %}
+<h2>Custom Design</h2>
+<p>Upload your design for hoodies or t-shirts. We'll contact you to finalize the print and pricing.</p>
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-2">
+        <label class="form-label">Your name</label>
+        <input name="name" class="form-control">
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Design file (png/jpg)</label>
+        <input type="file" name="design" class="form-control">
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Notes</label>
+        <textarea name="notes" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-primary">Submit design</button>
+</form>
+<hr>
+<h3>Recent designs</h3>
+<div class="row">
+    {% for d in designs %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            {% if d.filename %}
+            <img src="/uploads/{{ d.filename }}" class="card-img-top">
+            {% else %}
+            <div class="p-4">No image</div>
+            {% endif %}
+            <div class="card-body">
+                <h5>{{ d.name or 'Anonymous' }}</h5>
+                <p>{{ d.notes }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

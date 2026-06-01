@@ -45,3 +45,20 @@ Mindset: Entrepreneurial Strategy, Cold Outreach, Rapid Prototyping. 🤝 Let's 
 
 ## 📫 Let's Connect
 Gmail-Vishal108221@gmail.com
+
+
+---
+
+PWA and Desktop Notes
+----------------------
+
+- This project includes a basic Web App Manifest and a Service Worker to support Progressive Web App (PWA) behavior. On Android (Chrome) you can "Add to Home screen" to install the app.
+- On Windows, modern browsers (Chrome/Edge) allow installing the PWA which then runs in a standalone window. For a native Windows app with maximize/minimize controls, package the site with Electron. I can scaffold an `electron` folder with `main.js` and `package.json` if you want to produce a Windows executable.
+
+Quick Electron packaging steps (high level):
+
+1. Install Node.js and npm.
+2. Create `package.json` and a simple `main.js` that loads `http://localhost:5000` (or the built static files).
+3. Use `electron-packager` or `electron-builder` to create a Windows executable.
+
+If you want, I can add the Electron scaffold next.

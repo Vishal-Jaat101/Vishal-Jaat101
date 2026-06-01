@@ -1,0 +1,85 @@
+:root {
+    --brand-royal: #0f6b46;
+    --accent: #071214;
+    --muted: #6b7280;
+    --bg: #ffffff;
+}
+
+body {
+    font-family: Inter, system-ui, Arial;
+    margin: 0;
+    background: var(--bg);
+    color: var(--accent)
+}
+
+.container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 16px
+}
+
+.site-hero {
+    background: linear-gradient(180deg, rgba(15, 107, 70, 0.85), rgba(15, 107, 70, 0.6)), url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    color: #fff;
+    padding: 84px 0
+}
+
+.hero-content {
+    max-width: 700px;
+    margin-left: 16px
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    margin: 0 0 8px
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 18px
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+}
+
+.product-card .card-body {
+    padding: 12px
+}
+
+.price {
+    font-weight: 800;
+    color: var(--brand-royal)
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    text-decoration: none;
+    color: var(--accent);
+    background: #fff
+}
+
+.btn.primary {
+    background: var(--brand-royal);
+    color: #fff;
+    border: none
+}
+
+@media(max-width:600px) {
+    .hero-content h1 {
+        font-size: 28px
+    }
+}

@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %}Lookbook{% endblock %}
+{% block content %}
+<h2>Lookbook</h2>
+<div class="row">
+    {% for p in products %}
+    <div class="col-md-3 mb-3">
+        <img src="{{ p.image_url }}" class="img-fluid rounded">
+        <h6 class="mt-2">{{ p.name }}</h6>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

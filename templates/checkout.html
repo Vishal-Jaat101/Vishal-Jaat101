@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block title %}Checkout{% endblock %}
+{% block content %}
+<h2>Checkout</h2>
+{% if items %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for it in items %}
+        <tr>
+            <td>{{ it.product.name }}</td>
+            <td>{{ it.qty }}</td>
+            <td>₹{{ it.product.price_inr * it.qty }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p><strong>Total: ₹{{ total }}</strong></p>
+<form method="post" action="/payment">
+    <p>This is a dummy payment flow. Clicking Pay will simulate a successful payment (no real money charged).</p>
+    <button class="btn btn-success">Pay (Dummy)</button>
+</form>
+{% else %}
+<p>Your cart is empty. <a href="/shop">Go shopping</a></p>
+{% endif %}
+{% endblock %}
