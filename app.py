@@ -151,7 +151,7 @@ def lookbook():
 def coupons():
     coupons = [
         {'code': 'VEL10', 'desc': '10% off on hoodies', 'expires': '2026-12-31'},
-        {'code': 'SHIPFREE', 'desc': 'Free shipping above ₹1999', 'expires': '2026-12-31'},
+        {'code': 'SHIPFREE', 'desc': 'Free shipping above ₹1599-1999', 'expires': '2026-12-31'},
     ]
     return render_template('coupons.html', coupons=coupons, brand='Velmington')
 
@@ -274,7 +274,7 @@ def chat():
     if not msg:
         return jsonify({'reply': "Hi! Send a message."})
     if 'hello' in msg.lower():
-        return jsonify({'reply': 'Hello! Welcome to Velmington. How can I help with hoodies today?'})
+        return jsonify({'reply': 'Hello! Welcome to Velmington. How can I help you with hoodies today?'})
     if 'price' in msg.lower():
         return jsonify({'reply': 'Prices are in INR. Check the shop page for exact prices.'})
     return jsonify({'reply': f'I heard you say: "{msg}" — this is a demo chatbot.'})
