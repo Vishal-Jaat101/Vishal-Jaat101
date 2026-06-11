@@ -41,7 +41,6 @@ Mindset: Entrepreneurial Strategy, Cold Outreach, Rapid Prototyping. 🤝 Let's 
 - 🎓 Passed Class 12 | PCB Stream
 - 🏷️ Founder of Velmington (paused, not dead)
 - 🤖 Currently diving into AI/ML & Cybersecurity
-- 🎮 Gamer by night, builder by day
 
 ## 📫 Let's Connect
 Gmail-Vishal108221@gmail.com
