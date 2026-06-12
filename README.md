@@ -24,18 +24,18 @@ I spent 3 years (age 15 to 18) realizing that while I loved fashion, I obsessed 
 Artificial Intelligence & Machine Learning (The core of my custom design idea).
 Web Development (Building the fire website that powered the vision).
 Cybersecurity (Learning how to protect the digital assets I was creating).
-📈 Where I Am Now
+ Where I Am Now
 Today, I carry the spirit of Velmington into my tech career. My mindset remains the same: Nothing is impossible. I am currently focusing my energy on:
 
  AI/ML Development
  Cybersecurity
  Building scalable web solutions
 I spent 3 years learning how to build a business from scratch with nothing but an internet connection and a dream. Now, I'm building the future of tech.
-🛠️ Languages and Tools I Use:
+ Languages and Tools I Use:
 
 AI/LLMs: Prompt Engineering, AI-assisted development.
 Web: Frontend/Backend architecture (built through AI iteration).
-Mindset: Entrepreneurial Strategy, Cold Outreach, Rapid Prototyping. 🤝 Let's Connect! I’m always looking to collaborate on projects involving AI, ML, or innovative business models
+Mindset: Entrepreneurial Strategy, Cold Outreach, Rapid Prototyping.  Let's Connect! I’m always looking to collaborate on projects involving AI, ML, or innovative business models
 
 ##  Quick Stats
 -  Passed Class 12 | PCB Stream
