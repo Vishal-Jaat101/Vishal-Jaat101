@@ -1,4 +1,5 @@
 The Story of Velmington: From a 10th-Grade Dream to Tech Innovation
+
 Welcome to my profile! My journey into the world of tech and entrepreneurship wasn't started in a lab or a CS classroom—it started with a dream to build something of my own at age 15.
  The Vision: "Velmington"
 In 10th grade, I became obsessed with the idea of starting a company. After deep research, I identified a gap in the clothing industry: Personalization. Most brands gave you what they had; I wanted to give customers exactly what they imagined.
