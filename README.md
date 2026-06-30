@@ -29,7 +29,6 @@ Cybersecurity (Learning how to protect the digital assets I was creating).
 Today, I carry the spirit of Velmington into my tech career. My mindset remains the same: Nothing is impossible. I am currently focusing my energy on:
 
  AI/ML Development
- Cybersecurity
  Building scalable web solutions
 I spent 3 years learning how to build a business from scratch with nothing but an internet connection and a dream. Now, I'm building the future of tech.
  Languages and Tools I Use:
@@ -41,7 +40,7 @@ Mindset: Entrepreneurial Strategy, Cold Outreach, Rapid Prototyping.  Let's Conn
 ##  Quick Stats
 -  Passed Class 12 | PCB Stream
 -  Founder of Velmington (paused, not dead)
--  Currently diving into AI/ML & Cybersecurity
+-  Currently diving into AI/ML
 
 ##  Let's Connect
 Gmail-Vishal108221@gmail.com
